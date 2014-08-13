@@ -1,3 +1,27 @@
+#Hi there!
+I'm really excited to submit to you my answers to the Hireology homework challenge. If nothing else, the opportunity to get solid developer feedback is priceless.
+Thanks for taking the time to go over my submission.
+
+![Intro Gif](http://media.giphy.com/media/zaezT79s3Ng7C/giphy.gif)
+
+##Part 1 - Written Questions
+You'll find in the Written Questions directory, in two separate markdown files containing my essay submissions.
+
+##Part 2 - Programming Problems
+The Programming Problems directory contains subdirectories for each of the completed coding challenges.
+To run these, please use the following:
+
+
+```
+git clone
+bundle
+rake
+```
+
+
+
+================================================================================================================================================
+
 ##Hireology Software Engineer Homework
 
 ### Instructions
