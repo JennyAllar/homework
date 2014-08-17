@@ -1,4 +1,24 @@
 class SomeController < ApplicationController
+  
+  # At first glance, the nested and extensive if statements are alarming, especially considering the duplication in the 
+  # :is_deleted and :is_completed boolean outcomes. I'd consider putting that logic in the model and calling it here
+  # in the contoller.
+  
+  # In the jobs_contact section of this code, the nested unless conditional statements are difficult to completely
+  # understand. As a budding developer, I would have to spend quite some time disecting this code to get a complete
+  # understanding of where the logic was going. 
+  
+  # When I first glance at a code base such as this, I immediately wonder if there are tests I could reference to get
+  # a better idea of the intended flow of the code. As a developer who uses test-driven-development on a regualar basis,
+  # I often look to the test first.
+  
+  # The first things I would ask regarding the refactoring of this code, is if we could use any validations to avoid
+  # using all of the nested unless statements and .blank? methods. And if presence validations were not appropriate for
+  # this, I'd seriously consider moving a lot of the code into the model and calling those from here.
+  
+  
+  
+  
   def show_candidates
     s_key = params[:sort].blank? ? "All Candidates" : params[:sort];
     @open_jobs = Job.all_open_new(current_user.organization)
